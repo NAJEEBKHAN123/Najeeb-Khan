@@ -1,0 +1,32 @@
+/* Define the border animation for the new component */
+.animated-border {
+    border: 5px solid yellow; /* Initial border styling */
+    animation: superman 3s infinite; /* Apply the animation */
+  }
+  
+  /* Animation Keyframes */
+  @keyframes superman {
+    0% {
+      border-color: blue;
+      box-shadow: 10px 10px 100px 50px blue;
+    }
+    25% {
+      border-color: rgb(239, 244, 11);
+      box-shadow: 10px 10px 100px 50px rgb(239, 244, 11);
+    }
+    50% {
+      border-color: rgb(12, 12, 199);
+      transform: translateY(10px);
+      box-shadow: 10px 10px 100px 50px rgb(12, 12, 199);
+    }
+    75% {
+      border-color: rgb(130, 217, 160);
+      box-shadow: 10px 10px 100px 50px rgb(130, 217, 160);
+    }
+    100% {
+      border-color: rgb(50, 55, 205);
+      transform: translateY(0px);
+      box-shadow: 10px 10px 100px 50px rgb(50, 55, 205);
+    }
+  }
+  

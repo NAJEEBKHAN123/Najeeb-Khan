@@ -3,7 +3,7 @@ import mainimg from "../assets/newPic.jpg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-
+import "../screens/Home.css"; // Import CSS file for animations
 const HomePage = () => {
   // Animation Variants
   const container = {
@@ -21,24 +21,22 @@ const HomePage = () => {
   const item = {
     hidden: { y: 20, opacity: 0 },
     visible: {
-      y: 0,
-      opacity: 1,
-    },
+      y: 0, opacity: 1 },
   };
 
   return (
     <div className="h-full container mb-10 mt-20 flex items-center justify-center flex-col-reverse lg:flex-row">
       {/* Image Section with Colorful Background */}
-      <div className="h-[100%] w-[100%] flex items-center justify-center p-8 lg:justify-end">
+      <div className="h-[100%] w-[100%] flex items-center justify-center p-8 lg:justify-center lg:translate-x-[-20px]"> {/* Slight left adjustment with transform */}
         <motion.div
-          className="w-[280px] h-[280px] sm:w-[380px] sm:h-[380px] lg:w-[410px] lg:h-[410px] bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-full flex items-center justify-center"
+          className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] lg:w-[300px] lg:h-[300px] bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-full flex items-center justify-center"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
           <motion.img
             src={mainimg}
-            className="w-[260px] h-[260px] sm:w-[360px] sm:h-[360px] lg:w-[390px] lg:h-[390px] object-cover rounded-full"
+            className="w-[180px] h-[180px] sm:w-[230px] sm:h-[230px] lg:w-[280px] lg:h-[280px] object-cover rounded-full animated-border" // Add the new animation class here
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
@@ -59,15 +57,11 @@ const HomePage = () => {
             >
               <TypeAnimation
                 sequence={[
-                  "Hello 👋 it’s Me, Najeeb, and",
+                  "Welcome to my Profile",
                   2000,
-                  "I am a React.js Developer.",
+                  "My Name is Najeeb Ullah",
                   2000,
-                  "I am a Node.js Developer.",
-                  2000,
-                  "I am a Coder.",
-                  2000,
-                  "I am a Programmer.",
+                  "And I'm a Full Stack Developer",
                   2000,
                 ]}
                 wrapper="span"
@@ -88,7 +82,7 @@ const HomePage = () => {
               className="text-lg font-semibold mb-2 md:text-xl"
               variants={item}
             >
-              A Bit About Me
+              A Bit About Me..
             </motion.h3>
             <motion.p
               className="text-md tracking-wide text-justify lg:w-[30rem] leading-relaxed"
@@ -119,9 +113,9 @@ const HomePage = () => {
             ].map((item, index) => (
               <Link key={index} to={item.endpoint}>
                 <motion.div
-                  className={`w-[90px] border-2 mx-2 border-solid border-gray-800 hover:bg-blue-500 cursor-pointer transition-all h-[90px] duration-300 lg:w-[120px] lg:h-[120px] md:w-[110px] md:h-[110px] text-sm lg:text-lg ${
+                  className={`w-[90px] border-4 mx-2 border-solid border-yellow-200 hover:bg-blue-500 cursor-pointer transition-all h-[90px] duration-300 lg:w-[120px] lg:h-[120px] md:w-[110px] md:h-[110px] text-sm lg:text-lg ${
                     (index === 0 && "bg-red-600 text-white") ||
-                    (index === 1 && "bg-gray-500 text-white")
+                    (index === 1 && "bg-black text-white")
                   } rounded-full flex items-center justify-center`}
                   variants={item}
                 >

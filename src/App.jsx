@@ -10,7 +10,7 @@ import NotFound from "./screens/NotFound";
 
 function App() {
   return (
-    <BrowserRouter basename="/ReactTailwPortfolio" >
+    <BrowserRouter basename="/Najeeb-Khan" >
       <div className="h-calc-screen-160  w-[100%]">
         <Navbar />
         <Routes>
