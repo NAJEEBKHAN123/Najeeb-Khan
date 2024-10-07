@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
