@@ -21,13 +21,17 @@ const HomePage = () => {
   const item = {
     hidden: { y: 20, opacity: 0 },
     visible: {
-      y: 0, opacity: 1 },
+      y: 0,
+      opacity: 1,
+    },
   };
 
   return (
     <div className="h-full container mb-10 mt-20 flex items-center justify-center flex-col-reverse lg:flex-row">
       {/* Image Section with Colorful Background */}
-      <div className="h-[100%] w-[100%] flex items-center justify-center p-8 lg:justify-center lg:translate-x-[-20px]"> {/* Slight left adjustment with transform */}
+      <div className="h-[100%] w-[100%] flex items-center justify-center p-8 lg:justify-center lg:translate-x-[-20px]">
+        {" "}
+        {/* Slight left adjustment with transform */}
         <motion.div
           className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] lg:w-[300px] lg:h-[300px] bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-full flex items-center justify-center"
           initial={{ opacity: 0, scale: 0.5 }}
@@ -82,7 +86,7 @@ const HomePage = () => {
               className="text-lg font-semibold mb-2 md:text-xl"
               variants={item}
             >
-              A Bit About Me..
+              A Bit About Me...
             </motion.h3>
             <motion.p
               className="text-md tracking-wide text-justify lg:w-[30rem] leading-relaxed"
