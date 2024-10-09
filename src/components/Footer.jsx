@@ -31,13 +31,16 @@ function Footer() {
             <a href="https://github.com/NAJEEBKHAN123">
               <FaGithub className="text-3xl ml-4 hover:scale-110 transition-all duration-200" />
             </a>
+            <a href="https://github.com/NAJEEBKHAN123">
+              <FaGithub className="text-3xl ml-4 hover:scale-110 transition-all duration-200" />
+            </a>
           </div>
         </div>
         <div className="mt-6 lg:mt-0">
           <span className="block">
             Najeeb Khan web dev
           </span>
-          <span>+92088440190</span>
+          <span>+923019862406</span>
         </div>
       </div>
     </>
