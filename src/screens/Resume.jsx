@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-import cvImg from "../assets/main2imge.jpg";
+import cvImg from "../assets/mainPicc.jpg";
 import { useGSAP } from "@gsap/react";
 
 const Resume = () => {
@@ -33,16 +33,16 @@ const Resume = () => {
   }, []);
 
   const handleEmailClick = () => {
-    window.location.href = "mailto:hassankhan5uy99@gmail.com";
+    window.location.href = "mailto:najeebkhanlaku@gmail.com";
   };
 
   const handlePhoneClick = () => {
-    window.location.href = "tel:+923132402444";
+    window.location.href = "tel:+923088440190";
   };
 
   const handleLinkedInClick = () => {
     window.open(
-      "https://www.linkedin.com/in/muhammad-hassan-76a17b272/",
+      "https://www.linkedin.com/in/najeeb-khan90/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "_blank"
     );
   };
@@ -50,13 +50,13 @@ const Resume = () => {
   const educationData = [
     {
       id: 1,
-      subject: "SOFTWARE ENG",
-      school: "ISLAMIA COLLEGE UNIVERSITY PESHAWAR",
+      subject: "Information Technology",
+      school: "University of Agriculture Peshawar",
     },
     {
       id: 2,
       subject: " FA.c COMPUTER SCIENCE",
-      school: "CITY COLLEGE OF SCIENCE AND ARTS PESHAWAR",
+      school: "Govt College PESHAWAR",
     },
   ];
 
@@ -96,13 +96,12 @@ const Resume = () => {
                 <span
                   className="ml-1 hover:underline hover:cursor-pointer text-blue-500"
                   onClick={handleEmailClick}
-                >
-                  hassankhan5uy99@gmail.com
+                >najeebkhanlaku@gmail.com
                 </span>
               </div>
               <div className="min-w-max">
                 <span>📍</span>
-                <span className="ml-1">Canal Road Abdara Peshawar.</span>
+                <span className="ml-1">Near Forest Bazar Peshawar.</span>
               </div>
             </div>
           </div>
@@ -150,7 +149,7 @@ const Resume = () => {
           <div className="skills">
             <h2 className="text-2xl font-semibold">Skills</h2>
             <hr className="w-[100%] h-1 bg-gray-800" />
-            <div className="flex mt-2 flex-wrap lg:w-[250px]">
+            <div className="flex mt-2 flex-wrap  lg:w-[250px]">
               {[
                 { id: 1, name: "HTML" },
                 { id: 2, name: "CSS" },

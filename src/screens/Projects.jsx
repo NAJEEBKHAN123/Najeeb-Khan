@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import pro1img from "../assets/pro1.png";
-import pro2img from "../assets/pro2.png";
+import pro2img from "../assets/weatherapp.png";
 import codevenator from "../assets/codevenator.png";
 import ProjectItem from "./ProjectItem";
 
@@ -27,9 +27,9 @@ function Projects() {
     {
       id: 1,
       img: pro2img,
-      webLink: "https://racelookup.com/store",
-      title: "Race LookUp",
-      description:"A venture dedicated to organizing and facilitating competitionsandmarathons for individuals engaged in racing activities",
+      webLink: "https://weatherapp-1f43e.web.app/",
+      title: "Weather App",
+      description:"This is the simple weather app through which we find the weather of the any city by name.",
     },
     {
       id: 2,
