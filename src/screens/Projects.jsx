@@ -27,6 +27,7 @@ function Projects() {
     {
       id: 1,
       img: pro2img,
+      codeLink: 'https://github.com/NAJEEBKHAN123/weatherAppReact.git',
       webLink: "https://weatherapp-1f43e.web.app/",
       title: "Weather App",
       description:"This is the simple weather app through which we find the weather of the any city by name.",
