@@ -16,7 +16,7 @@ function Footer() {
       <div className="flex flex-col lg:h-[100px] justify-between px-8 md:px-16 py-8 lg:flex-row">
         <div>
           <h2 className="font-semibold text-xl">Phone</h2>
-          <span onClick={handlePhoneClick} className="cursor-pointer underline text-blue-500">+92088440190</span>
+          <span onClick={handlePhoneClick} className="cursor-pointer underline text-blue-500">+923088440190</span>
         </div>
         <div className="mt-6 lg:mt-0">
           <h2 className="font-semibold text-xl">Email</h2>
