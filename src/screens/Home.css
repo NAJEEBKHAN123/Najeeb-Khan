@@ -30,3 +30,16 @@
     }
   }
   
+.random{
+  display: flex;
+  background-color:  rgb(40, 47, 97);
+  width: 620px;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  box-shadow:0 2px 4px rgba(0, 0, 0, 0.2);
+  color: white;
+  /* transition: width 0.3s ease-in-out; */
+  margin-top: 50px; 
+}

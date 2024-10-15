@@ -54,10 +54,11 @@ const HomePage = () => {
           {/* Animated Introduction Text */}
           <motion.div className="mb-6 lg:mb-12 lg:mt-7">
             <motion.h2
-              className="text-2xl font-bold md:text-4xl"
+              className="text-2xl font-bold md:text-4xl border-r-4 border-4 mt-24 random"
               initial={{ opacity: 0, y: -300 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", stiffness: 160 }}
+              
             >
               <TypeAnimation
                 sequence={[
@@ -71,8 +72,9 @@ const HomePage = () => {
                 wrapper="span"
                 speed={50}
                 repeat={Infinity}
-              />
+                />
             </motion.h2>
+                
           </motion.div>
 
           {/* About Me Section */}
@@ -82,26 +84,13 @@ const HomePage = () => {
             animate="visible"
             variants={container}
           >
-            <motion.h3
+            {/* <motion.h3
               className="text-lg font-semibold mb-2 md:text-xl"
               variants={item}
             >
               A Bit About Me...
-            </motion.h3>
-            <motion.p
-              className="text-md tracking-wide text-justify lg:w-[30rem] leading-relaxed"
-              variants={item}
-            >
-              Experienced MERN stack developer skilled in React.js, Node.js,
-              Express, MongoDB, Tailwind CSS, and Framer Motion. I excel at
-              creating responsive, visually appealing user interfaces and
-              optimizing component styling with Tailwind CSS. Proficient in
-              adding animations with Framer Motion to enhance user experience.
-              Strong understanding of backend fundamentals ensures smooth
-              functionality and data flow. Passionate about intuitive solutions
-              and collaboration. Let's connect for innovative web development
-              opportunities!
-            </motion.p>
+            </motion.h3> */}
+           
           </motion.div>
 
           {/* Navigation Links */}
@@ -114,6 +103,8 @@ const HomePage = () => {
             {[
               { endpoint: "/resume", endpointName: "Resume" },
               { endpoint: "/projects", endpointName: "Projects" },
+              { endpoint: "/about", endpointName: "About" },
+             
             ].map((item, index) => (
               <Link key={index} to={item.endpoint}>
                 <motion.div

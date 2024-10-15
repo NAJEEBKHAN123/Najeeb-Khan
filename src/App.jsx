@@ -7,6 +7,8 @@ import Footer from "./components/Footer";
 import Projects from "./screens/Projects";
 import Resume from "./screens/Resume";
 import NotFound from "./screens/NotFound";
+import About from "./screens/About";
+import Skills from './screens/Skills'
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} /> 
           <Route path="/resume" element={<Resume />} /> 
+          <Route path="/about" element={<About />} /> 
+          <Route path="/skills" element={<Skills />} /> 
         </Routes>
         <Footer />
       </div>
