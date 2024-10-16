@@ -51,9 +51,9 @@ function Experience() {
             <motion.div
               key={item.id}
               className="bg-black p-4 rounded-md border border-yellow-500 shadow-md text-center"
-              initial={{ opacity: 0, y: 20 }}
-              animate={controls}
-              transition={{ duration: 0.4, delay: index * 0.2 }}
+              initial={{ opacity: 0, y: -500     }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ type: "spring", stiffness: 120,  delay: index * 0.2  }}
               whileHover={{ scale: 1.05, rotate: 2 }} // Scale and rotate on hover
             >
               <img
