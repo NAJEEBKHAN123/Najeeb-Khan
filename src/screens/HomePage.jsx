@@ -18,14 +18,6 @@ const HomePage = () => {
     },
   };
 
-  const item = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-    },
-  };
-
   return (
     <div className="h-full container mb-10 mt-20 flex items-center justify-center flex-col-reverse lg:flex-row">
       {/* Image Section with Colorful Background */}
@@ -77,21 +69,7 @@ const HomePage = () => {
                 
           </motion.div>
 
-          {/* About Me Section */}
-          <motion.div
-            className="mt-2"
-            initial="hidden"
-            animate="visible"
-            variants={container}
-          >
-            {/* <motion.h3
-              className="text-lg font-semibold mb-2 md:text-xl"
-              variants={item}
-            >
-              A Bit About Me...
-            </motion.h3> */}
-           
-          </motion.div>
+         
 
           {/* Navigation Links */}
           <motion.div

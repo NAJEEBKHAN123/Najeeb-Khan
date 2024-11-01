@@ -23,10 +23,10 @@ function About() {
   }, []);
 
   return (
-    <div className="h-auto w-full flex items-center justify-center p-6 mt-24 lg:mt-52">
-      <div className="h-full w-full lg:w-[90%] ">
+    <div className="h-auto w-full flex items-center justify-center p-8 lg:mt-40 sm:mt-20 sm:p-2">
+      <div className="h-full w-full lg:w-[90%] sm:pt-8 md:pt-8">
         <motion.h1
-          className="text-4xl font-bold -mt-32 p-2"
+          className="text-4xl font-bold  p-2"
           initial={{ opacity: 0, y: -200 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", stiffness: 120 }}
@@ -34,7 +34,7 @@ function About() {
           About
         </motion.h1>
         <motion.div
-                  className=" border-2 rounded-lg border-red-500 p-14  bg-slate-300 "
+                  className=" border-2 rounded-lg border-red-500 p-16 sm:p-4 text-justify  bg-slate-300"
                   initial={{ opacity: 0, y: -500     }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ type: "spring", stiffness: 120 }}

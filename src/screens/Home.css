@@ -32,6 +32,7 @@
   
 .random{
   display: flex;
+  justify-content: center;
   background-color:  rgb(40, 47, 97);
   width: 620px;
   text-align: center;
@@ -42,4 +43,31 @@
   color: white;
   /* transition: width 0.3s ease-in-out; */
   margin-top: 50px; 
+}
+
+
+.contact-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-icon .items{
+  background: gray;
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 2px solid yellow;
+}
+.contact-icon .items:hover{
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
+}
+
+.contact-icon .items .icons{
+  font-size: 2rem;
+
 }
