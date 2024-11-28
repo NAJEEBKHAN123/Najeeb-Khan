@@ -29,21 +29,23 @@
       box-shadow: 10px 10px 100px 50px rgb(50, 55, 205);
     }
   }
+  .random {
+    background-color: rgb(40, 47, 97);
+    text-align: center;
+    padding: 20px 30px; /* Maintain good spacing */
+    border-radius: 10px;
+    border: 1px solid yellow;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: white;
+    display: inline-block; /* Adjust width to content */
+    min-width: 300px; /* Ensure the default shape retains its size */
+    max-width: 620px; /* Prevent it from becoming too large on large screens */
+    width: 100%; /* Fully responsive */
+    margin: 20px auto; /* Center it horizontally and add spacing */
+    white-space: nowrap; /* Keep text in one line */
+  }
   
-.random{
-  display: flex;
-  justify-content: center;
-  background-color:  rgb(40, 47, 97);
-  width: 620px;
-  text-align: center;
-  padding: 30px;
-  border-radius: 10px;
-  border: 1px solid yellow;
-  box-shadow:0 2px 4px rgba(0, 0, 0, 0.2);
-  color: white;
-  /* transition: width 0.3s ease-in-out; */
-  margin-top: 50px; 
-}
+  
 
 
 .contact-icon{
@@ -53,7 +55,8 @@
 }
 .contact-icon .items{
   background: gray;
-  margin: 10px;
+
+  margin: 2px;
   height: 50px;
   width: 50px;
   display: flex;
@@ -63,7 +66,7 @@
   border: 2px solid yellow;
 }
 .contact-icon .items:hover{
-  background-color: var(--bg-color);
+  background-color: rgb(211, 162, 162);
   box-shadow: var(--box-shadow);
 }
 

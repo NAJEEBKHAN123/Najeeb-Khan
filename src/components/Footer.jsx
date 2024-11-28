@@ -30,9 +30,9 @@ function Footer() {
         <div className="mt-6 lg:mt-0 text-center">
           <h2 className="font-semibold text-xl">Follow Me</h2>
           <div className="flex justify-center mt-2">
-            <div className="contact-icon flex">
-              <a href="" className="items">
-                <FaInstagram className="icons  hover:scale-110 transition-all duration-200"    />
+            <div className="contact-icon flex ">
+              <a href="" className="items ">
+                <FaInstagram className="icons  hover:scale-110 transition-all duration-200  "    />
               </a>
               <a href="https://www.facebook.com/profile.php?id=100053768207242" className="items">
                 <CiFacebook className="icons  hover:scale-110 transition-all duration-200"   />
