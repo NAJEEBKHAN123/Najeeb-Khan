@@ -1,6 +1,6 @@
 {
   "homepage": "https://NAJEEBKHAN123.github.io/Najeeb-Khan",
-  "name": "myPortfolio",
+  "name": "PortfolioReact",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -38,6 +38,6 @@
     "gh-pages": "^6.1.1",
     "postcss": "^8.4.40",
     "tailwindcss": "^3.4.7",
-    "vite": "^5.0.8"
+    "vite": "^5.4.11"
   }
 }
