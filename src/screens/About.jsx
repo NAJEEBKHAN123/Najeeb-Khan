@@ -1,14 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-// import pro1img from "../assets/pro1.png";
-// import pro2img from "../assets/weatherapp.png";
-// import codevenator from "../assets/codevenator.png";
-// import ProjectItem from "./ProjectItem";
 
 function About() {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
-  
+
   useEffect(() => {
     const element = ref.current;
     const onScroll = () => {
@@ -23,29 +19,55 @@ function About() {
   }, []);
 
   return (
-    <div className="h-auto w-full flex items-center justify-center p-8 lg:mt-40 sm:mt-20 sm:p-2">
-      <div className="h-full w-full lg:w-[90%] sm:pt-8 md:pt-8">
+    <div className="h-auto w-full flex items-center justify-center px-6 py-10 sm:px-4 sm:py-8 lg:mt-40 sm:mt-20">
+      <div className="h-full w-full lg:w-3/4 sm:w-full">
+        {/* Animated Heading */}
         <motion.h1
-          className="text-4xl font-bold  p-2"
-          initial={{ opacity: 0, y: -200 }}
+          className="text-4xl sm:text-3xl lg:text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-600 mb-12"
+          initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", stiffness: 120 }}
         >
-          About
+          About Me
         </motion.h1>
+
+        {/* About Section */}
         <motion.div
-                  className=" border-2 rounded-lg border-red-500 p-16 sm:p-4 text-justify  bg-slate-300"
-                  initial={{ opacity: 0, y: -500     }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ type: "spring", stiffness: 120 }}
-        
+          className="bg-slate-100 border-2 rounded-lg border-red-500 p-10 sm:p-6 text-justify shadow-xl hover:shadow-2xl transition-shadow duration-500"
+          initial={{ opacity: 0, y: -500 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", stiffness: 120 }}
         >
-          <span className="text-pink-400 font-bold">Hello, My name is Najeeb Ullah</span> <br />
-          I Experienced MERN stack developer skilled in React.js, Node.js, Express, MongoDB, Tailwind CSS, and Framer Motion. I excel at creating responsive, visually appealing user interfaces, and optimizing component styling with Tailwind CSS. Proficient in adding animations with Framer Motion to enhance user experience. Strong understanding of backend fundamentals ensures smooth functionality and data flow. Passionate about intuitive solutions and collaboration. Let's connect for innovative web development opportunities!
+          <span className="text-pink-400 font-semibold text-xl block mb-6">Hello, My name is Najeeb Ullah</span>
+          <p className="text-lg sm:text-base leading-relaxed text-gray-700">
+            I am an experienced <strong>MERN stack developer</strong> skilled in 
+            <strong> React.js</strong>, <strong>Node.js</strong>, <strong>Express</strong>, 
+            <strong> MongoDB</strong>, <strong>Tailwind CSS</strong>, and <strong>Framer Motion</strong>. 
+            I specialize in creating responsive and visually appealing user interfaces with 
+            <strong> Tailwind CSS</strong>, and I am proficient in adding smooth animations 
+            using <strong>Framer Motion</strong> to enhance the user experience. My strong 
+            understanding of backend fundamentals ensures smooth data flow and functionality. 
+            I am passionate about creating intuitive, user-friendly solutions, and working collaboratively 
+            to bring innovative web development projects to life.
+          </p>
+        </motion.div>
+
+        {/* Contact Call to Action */}
+        <motion.div
+          className="flex justify-center mt-8"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", stiffness: 120 }}
+        >
+          <a
+            href="mailto:najeebkhanlaku@gmail.com"
+            className="bg-gradient-to-r from-red-600 to-yellow-400 text-white px-8 py-4 text-lg font-bold rounded-full hover:scale-105 transform transition duration-300 shadow-lg hover:shadow-xl"
+          >
+            Let's Connect
+          </a>
         </motion.div>
       </div>
     </div>
-    
   );
 }
 
