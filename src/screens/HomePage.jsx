@@ -20,7 +20,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="h-full container mx-auto mb-10 mt-20 px-4 flex flex-col lg:flex-row items-center justify-center">
+    <div className="h-full container mx-auto mb-10 mt-28 px-4 pb-20 flex flex-col lg:flex-row items-center justify-center">
       {/* Image Section */}
       <div className="h-full w-full flex items-center justify-center p-4 lg:w-1/2">
         <motion.div
@@ -68,32 +68,29 @@ const HomePage = () => {
 
           {/* Navigation Links */}
           <motion.div
-  className="flex justify-center h-full mt-10 w-full lg:justify-start relative space-x-6"
-  initial="hidden"
-  animate="visible"
-  variants={container}
->
-  {[
-    { endpoint: "/resume", endpointName: "Resume" },
-    { endpoint: "/projects", endpointName: "Projects" },
-  ].map((item, index) => (
-    <Link key={index} to={item.endpoint}>
-      <motion.div
-        className={`w-24 border-4 mx-2 border-solid border-yellow-200 hover:bg-blue-500 cursor-pointer transition-all h-24 duration-300 lg:w-28 lg:h-28 md:w-26 md:h-26 text-sm lg:text-lg ${
-          (index === 0 && "bg-red-600 text-white") ||
-          (index === 1 && "bg-black text-white")
-        } rounded-full flex items-center justify-center`}
-        variants={item}
-        style={{
-          marginLeft: index === 1 ? "50px" : "0px", // Moves only "Projects"
-        }}
-      >
-        <span className="font-bold">{item.endpointName}</span>
-      </motion.div>
-    </Link>
-  ))}
-</motion.div>
-
+            className="flex flex-wrap justify-center lg:justify-start mt-6 gap-4"
+            initial="hidden"
+            animate="visible"
+            variants={container}
+          >
+            {[
+              { endpoint: "/resume", endpointName: "Resume" },
+              { endpoint: "/projects", endpointName: "Projects" },
+            ].map((item, index) => (
+              <Link key={index} to={item.endpoint}>
+                <motion.div
+                  className={`w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 flex items-center justify-center text-xs sm:text-sm lg:text-base font-bold rounded-full border-4 ${
+                    index === 0
+                      ? "bg-red-600 text-white border-yellow-400"
+                      : "bg-black text-white border-yellow-400"
+                  } hover:scale-110 transition-transform duration-300`}
+                  variants={item}
+                >
+                  {item.endpointName}
+                </motion.div>
+              </Link>
+            ))}
+          </motion.div>
         </div>
       </div>
     </div>

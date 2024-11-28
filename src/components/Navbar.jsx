@@ -32,80 +32,81 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-between shadow-md h-[55px] md:h-[60px] p-4 items-center fixed w-full top-0 bg-slate-600 text-white z-30">
-      <div className="flex items-center justify-center ml-1 lg:ml-2">
-        <h2 className="font-bold text-lg lg:text-3xl">
-          <span className="text-red-400 tracking-wider text-7xl/2 font-extrabold">
-            Na
-          </span>
-          Jeeb
-        </h2>
-        <span className="text-sm ml-1 lg:text-lg mt-1 ">Web dev</span>
-        <div
-          className={`lg:flex items-center font-medium  justify-center ml-3  ${
-            menuOpen
-              ? "absolute flex   flex-col right-2 w-[200px] h-[200px] bg-white text-black z-50 shadow-xl rounded-lg top-14 "
-              : "hidden "
-          }`}
-        >
-          <Link
-            to={"/"}
-            onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : menuOpen)}
-            className="lg:mx-2  text-xl lg:text-sm rounded-lg  transition-all duration-200 hover:shadow-xl  px-3"
-          >
-            Home
-          </Link>
-          |
-          <Link
-            to={"/resume"}
-            onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : menuOpen)}
-            className="lg:mx-2  text-xl lg:text-sm  rounded-lg transition-all duration-200 hover:shadow-xl px-3"
-          >
-            Resume
-          </Link>
-          |
-          <Link
-            to="/projects"
-            onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : menuOpen)}
-            className="lg:mx-2  text-xl lg:text-sm  rounded-lg transition-all duration-200 hover:shadow-xl px-3"
-          >
-            Projects
-          </Link>
-          |
-          <Link
-            to="/about"
-            onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : menuOpen)}
-            className="lg:mx-2  text-xl lg:text-sm  rounded-lg transition-all duration-200 hover:shadow-xl px-3"
-          >
-            About
-          </Link>
-          |
-          <Link
-            to="/skills"
-            onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : menuOpen)}
-            className="lg:mx-2  text-xl lg:text-sm  rounded-lg transition-all duration-200 hover:shadow-xl px-3"
-          >
-            Skills
-          </Link>
-        </div>
-      </div>
-      <div className="lg:hidden me-2">
-        <Hamburger toggled={menuOpen} toggle={toggleMenu} />
-      </div>
-      
-
-      {/* The line that appears at the bottom of the navbar */}
-      <div
-        className="bg-orange-300 h-[1px] absolute bottom-0 left-0"
-        style={{ width: `${scrollProgress}%` }}
-      />
-    <button
-  onClick={handlePhoneClick}
-  className="cursor-pointer bg-gradient-to-tl from-orange-500  to-purple-500 hover:opacity-90 text-white py-2 px-6 rounded-md font-bold "
+    <div className="flex items-center justify-center ml-1 lg:ml-2">
+      <h2 className="font-bold text-lg lg:text-3xl">
+        <span className="text-red-400 tracking-wider text-7xl/2 font-extrabold">
+          Na
+        </span>
+        Jeeb
+      </h2>
+      <span className="text-sm ml-1 lg:text-lg mt-1 ">Web dev</span>
+    </div>
+    <div className="lg:hidden me-2">
+      <Hamburger toggled={menuOpen} toggle={toggleMenu} />
+    </div>
+  
+    <div
+  className={`lg:flex items-center font-medium justify-center ${
+    menuOpen
+      ? "absolute flex flex-col right-[-50px] top-14 w-[200px] bg-white text-black z-50 shadow-xl rounded-lg max-h-[calc(100vh-60px)]"
+      : "hidden"
+  }`}
 >
-  Call Now
-</button>
+  <Link
+    to={"/"}
+    onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : menuOpen)}
+    className="lg:mx-2 text-xl lg:text-sm rounded-lg transition-all duration-200 hover:shadow-xl px-3"
+  >
+    Home
+  </Link>
+  |
+  <Link
+    to={"/resume"}
+    onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : menuOpen)}
+    className="lg:mx-2 text-xl lg:text-sm rounded-lg transition-all duration-200 hover:shadow-xl px-3"
+  >
+    Resume
+  </Link>
+  |
+  <Link
+    to="/projects"
+    onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : menuOpen)}
+    className="lg:mx-2 text-xl lg:text-sm rounded-lg transition-all duration-200 hover:shadow-xl px-3"
+  >
+    Projects
+  </Link>
+  |
+  <Link
+    to="/about"
+    onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : menuOpen)}
+    className="lg:mx-2 text-xl lg:text-sm rounded-lg transition-all duration-200 hover:shadow-xl px-3"
+  >
+    About
+  </Link>
+  |
+  <Link
+    to="/skills"
+    onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : menuOpen)}
+    className="lg:mx-2 text-xl lg:text-sm rounded-lg transition-all duration-200 hover:shadow-xl px-3"
+  >
+    Skills
+  </Link>
+</div>
 
-    </nav>
+
+  
+    <div
+      className="bg-orange-300 h-[1px] absolute bottom-0 left-0"
+      style={{ width: `${scrollProgress}%` }}
+    />
+    <button
+      onClick={handlePhoneClick}
+      className="cursor-pointer bg-gradient-to-tl from-orange-500 to-purple-500 hover:opacity-90 text-white py-2 px-6 rounded-md font-bold text-sm sm:text-base lg:text-lg"
+    >
+      Call Now
+    </button>
+  </nav>
+  
   );
 };
 
