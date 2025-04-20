@@ -37,7 +37,7 @@ function Footer() {
               <a href="https://www.facebook.com/profile.php?id=100053768207242" className="items">
                 <CiFacebook className="icons  hover:scale-110 transition-all duration-200"   />
               </a>
-              <a href="https://www.linkedin.com/in/najeeb-khan90" className="items">
+              <a href=" https://www.linkedin.com/in/najeeb-ullah-b78251361/" className="items">
                 <CiLinkedin className="icons  hover:scale-110 transition-all duration-200"   />
               </a>
               <a href="" className="items" target="_blank" rel="noopener noreferrer">

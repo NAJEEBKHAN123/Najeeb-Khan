@@ -27,7 +27,7 @@ const Navbar = () => {
     };
   }, []);
   const handlePhoneClick = () => {
-    window.location.href = "tel:+92088440190";
+    window.location.href = "tel:+923088440190";
   };
 
   return (
@@ -90,6 +90,14 @@ const Navbar = () => {
     className="lg:mx-2 text-xl lg:text-sm rounded-lg transition-all duration-200 hover:shadow-xl px-3"
   >
     Skills
+  </Link>
+  |
+  <Link
+    to="/contact"
+    onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : menuOpen)}
+    className="lg:mx-2 text-xl lg:text-sm rounded-lg transition-all duration-200 hover:shadow-xl px-3"
+  >
+    Contact
   </Link>
 </div>
 

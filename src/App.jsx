@@ -9,6 +9,7 @@ import Resume from "./screens/Resume";
 import NotFound from "./screens/NotFound";
 import About from "./screens/About";
 import Skills from './screens/Skills'
+import Contact from "./screens/Contact";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/resume" element={<Resume />} /> 
           <Route path="/about" element={<About />} /> 
           <Route path="/skills" element={<Skills />} /> 
+          <Route path="/contact" element={<Contact />} /> 
         </Routes>
         <Footer />
       </div>
